@@ -153,7 +153,6 @@ body{
         align-self: end;
     }
 
-    
     .card-bottom{
         display: flex;
         justify-content: center;
@@ -173,7 +172,7 @@ body{
     }
 
     .colton:nth-child(3){
-        align-self: end;
+        align-self: end; 
     }
 
     

@@ -1,0 +1,197 @@
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-Blue: hsl(223, 100%, 88%);
+    --light-Red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container{
+    max-width: 425px;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+}
+
+.logo{
+   margin: 40px auto 50px;
+   display: block;
+   transform: scale(0.7);
+}
+
+.main-heading{
+    color:hsl(0, 0%, 59%);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+   
+.soon{
+    color:hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.content{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    color:hsl(209, 33%, 12%);
+    margin-bottom: 40px;
+}
+
+.email{
+    width: 90%;
+    display: block;
+    margin: 0 auto 10px;
+    border: 1px solid var(--pale-Blue);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.email::placeholder{
+    color:hsl(0, 0%, 59%, 0.4);
+}
+
+.button{
+    background-color:hsl(223, 87%, 63%);
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--pale-Blue);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: hsl(223, 87%, 75%)
+}
+
+.input{
+    position: relative;
+}
+
+.dashboard{
+    max-width: 100%;
+    margin: 50px auto 0px;
+    display: block;
+}
+
+.copyright{
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    color:hsl(0, 0%, 59%);
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 100%;
+    padding-top: 7px;
+    margin: 80px 10px 10px;
+    color: var(--blue);
+}
+
+.icons i:hover{
+    border-color: none;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+.copyright-icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.valid{
+    width: 70%;
+    margin: 10px auto 20px;
+    font-size: 11px;
+    color: red;
+    font-style: italic;
+    display: none;
+}
+
+.blank{
+    display: block;
+}
+
+.border{
+    border-color: red;
+}
+
+
+@media (min-width: 800px) {
+
+    .container{
+        max-width: 550px;
+    }
+
+    .logo{
+        transform: scale(0.9);
+    }
+    .main-heading{
+        font-size: 35px;
+    }
+
+    .content{
+        font-size: 16px;
+    }
+
+    .email{
+        margin-top: 10px;
+        display: inline;
+        width: 60%;
+    }
+
+    .input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button{
+        display: inline;
+        width: 30%;
+    }
+
+    .dashboard{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .valid{
+        position: absolute;
+        left: 30px;
+        bottom: -35px;
+    }
+}

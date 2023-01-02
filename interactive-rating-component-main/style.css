@@ -1,0 +1,145 @@
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-Grey: hsl(217, 12%, 63%);
+    --medium-Grey: hsl(216, 12%, 54%);
+    --dark-Blue: hsl(213, 19%, 18%);
+    --very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-Dark-Blue);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    max-width: 350px;
+    padding: 25px;
+    background-color: hsl(216, 15%, 12%);
+    border-radius: 20px;
+}
+
+.image{
+    padding: 15px;
+    background-color: var(--dark-Blue);
+    border-radius: 100%;
+}
+
+
+.container p:nth-child(2){
+    padding: 20px 0px 20px;
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.container p:nth-child(3){
+    color: var(--light-Grey);
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttons{
+    padding: 20px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button{
+    border-radius: 100%;
+    width: 40px;
+    aspect-ratio: 1;
+    border: none;
+    background-color: var(--dark-Blue);
+    color: white;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: var(--light-Grey);
+}
+
+.submit-button{
+    background-color: var(--orange);
+    border-radius: 20px;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    color: white;
+}
+
+.submit-button:hover{
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.submit-state{
+    max-width: 350px;
+    padding: 25px;
+    background-color: hsl(216, 15%, 12%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration{
+    width: 60%;
+    padding: 10px 0px 20px;
+}
+
+.submit-state p:nth-child(2){
+    padding: 10px 15px;
+    background-color: var(--dark-Blue);
+    border-radius: 20px;
+    color: var(--orange);
+    text-align: center;
+}
+
+.submit-state p:nth-child(3){
+    padding: 20px 0px 20px;
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
+
+.submit-state p:nth-child(4){
+    color: var(--light-Grey);
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.buttons .orange{
+    background-color: var(--orange);
+}
+
+.buttons .orange:hover{
+    background-color: var(--orange);
+}
+
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}

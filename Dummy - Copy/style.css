@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightsalmon;
+}
+
+.container{
+  margin-top: 20px;
+  padding: 20px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: grey;
+  display: block;
+  border-radius: 20px;
+  padding: 10px 20px;
+}

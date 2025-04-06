@@ -2,7 +2,6 @@ const arrows = document.querySelectorAll('.arrow');
 const answers = document.querySelectorAll('.answer');
 
 
-
 function display(event){
     
     for(i = 0;i < answers.length;i++){

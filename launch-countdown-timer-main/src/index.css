@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  background-image: url(../images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #201e29;
+}
+
+#root{
+  height: 100%;
+}
+
+@media (min-width : 1000px) {
+  body {
+    background-size: contain;
+  }
+}

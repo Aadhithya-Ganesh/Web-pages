@@ -1,0 +1,191 @@
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    border-radius: 100%;
+    width: 35px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttonInput {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttonClicked {
+    background: url(./../../images/icon-check.svg) center/50% no-repeat, linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.input, .listItem {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.inputLight {
+    background-color: hsl(0, 0%, 98%);
+    color : hsl(235, 24%, 19%);
+}
+
+.inputDark {
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(0, 0%, 98%);
+}
+
+.colorLight {
+    background-color: hsl(0, 0%, 98%);
+    color : hsl(235, 24%, 19%);
+    border: 1px solid hsl(236, 33%, 92%);
+}
+
+.colorDark {
+   background-color: hsl(235, 24%, 19%);
+   color: hsl(0, 0%, 98%);
+   border: 1px solid hsl(237, 14%, 26%);
+}
+
+.buttonLight {
+    background-color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(236, 33%, 92%);
+}
+
+.buttonDark {
+    background-color: hsl(235, 24%, 19%);
+    border: 2px solid hsl(233, 14%, 35%);
+}
+
+.input::placeholder {
+    color: hsl(236, 9%, 61%);
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.notesContainer{
+    max-width: 350px;
+    margin: 50px auto 10px;
+    border-radius: 5px;
+}
+
+.notesContainer p {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.noNotes {
+    max-width: 350px;
+    border-top: 2px solid hsl(0, 0%, 98%);
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: hsl(0, 0%, 98%);
+}
+
+.noNotesLight{
+    border-color: hsl(236, 33%, 92%);
+    color: hsl(236, 33%, 92%);
+}
+
+.noNotesDark {
+    border-color:  hsl(235, 21%, 11%);
+    color : hsl(235, 21%, 11%);
+}
+
+.strikeThroughLight {
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%);
+}
+
+.strikeThroughDark{
+    text-decoration: line-through;
+    color: hsl(233, 14%, 35%);
+}
+
+.deleteButton {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.listItem{
+    cursor: pointer;
+}
+
+.listItem:hover + .deleteButton{
+    display: block;
+}
+
+.deleteButton span {
+    display: block;
+    margin: 5px;
+    height: 2px;
+    width: 25px;
+    background-color: hsl(233, 11%, 84%);
+}
+
+.deleteButton span:nth-child(1){
+    transform: rotate(-45deg) translateY(4px) translateX(-5px);
+}
+
+.bottomLight{
+    color: hsl(233, 11%, 84%);
+}  
+
+.bottomDark{
+    color: hsl(234, 11%, 52%);
+}
+
+.deleteButton span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.lastContainer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px;
+}
+
+.lastContainer p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.lastContainer p:last-child{
+    cursor: pointer;
+}
+
+@media (min-width : 768px) {
+    .container {
+        max-width: 550px;
+    }
+
+    .notesContainer {
+        max-width: 550px;
+    }
+
+    .noNotes {
+        max-width: 550px;
+    }
+}
